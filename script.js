@@ -11,6 +11,7 @@ let player_two_button = document.querySelector('.player_two_button')
 let error             = document.querySelector('.error')
 let playerName        = document.querySelector('.playerName')
 let chance            = document.querySelector('.chance')
+let result            = document.querySelector('.result')
 
 let i = 0
 chance.innerHTML = i
@@ -52,7 +53,7 @@ player_one_button.addEventListener('click' , ()=>{
             if (player_one_input.value == player_two_input.value){
                 console.log('Player 2 win')
                 result.style = 'display:block'
-                result.innerHTML += 'Player two win'
+                result.innerHTML += 'Player 2 win'
                 player_two.style = 'display:none'
                 playerName.style = 'display:none'
 
@@ -61,7 +62,7 @@ player_one_button.addEventListener('click' , ()=>{
                 chance.innerHTML = i
                 if(i==5){
                     result.style = 'display:block'
-                    result.innerHTML += 'Player one win'
+                    result.innerHTML += 'Player 1 win'
                     player_two.style = 'display:none'
                     playerName.style = 'display:none'
                 }
